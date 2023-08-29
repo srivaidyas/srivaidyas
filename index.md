@@ -33,3 +33,28 @@ Here's a little about me in the form of a ***freeform drawing***
 - [Say Yes to Heaven](https://www.youtube.com/watch?v=MiAoetOXKcY&pp=ygURc2F5IHllcyB0byBoZWF2ZW4%3D)
 <br><br>
 
+### Here is a little mini game :)
+<div>
+<script>
+    var question = 1
+        function checkInput() {
+            var userInput = document.getElementById("userInput").value;
+            if (userInput == "10th" && question == 1) {
+                document.getElementById("questionLabel").textContent = "Which year did I move to San Deigo?"
+                document.getElementById("userInput").value = ""
+                question = question + 1
+            }
+            if (userInput == "2022" && question == 2) {
+                document.getElementById("questionLabel").textContent = "Name my #1 favorite song."
+                document.getElementById("userInput").value = ""
+                question = question + 1
+                }
+             if (userInput == "last night" && question == 3) {
+                alert("You got everything right!")
+                }
+        }
+    </script>
+    <label id = "questionLabel" for="userInput">What grade am I in?</label>
+    <input type="text" id="userInput">
+    <button onclick="checkInput()">Submit</button>
+</div> 
